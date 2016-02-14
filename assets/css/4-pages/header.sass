@@ -1,0 +1,75 @@
+header
+    width:auto
+    height:100vh
+    margin:0
+    padding:0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: linear-gradient(to left, rgba(123, 67, 151, 0.54) , rgba(220, 36, 48, 0.56))
+    overflow: hidden
+    position: relative
+    background-attachment: fixed
+    
+   
+    
+    
+    #myVideo
+        position: absolute
+        top:50%
+        left:50%
+        +transform(translate(-50%,-50%))
+        +transition(all 500ms ease-in-out)
+        min-width: 100%
+        min-height:100%
+        width:auto
+        height: auto
+        z-index:-1
+        
+        
+        
+    
+    
+    .logo
+        height:280px
+        width:500px
+        background-image:url("../img/logo.svg")
+        background-size:contain
+        background-repeat: no-repeat
+        z-index: 1
+    .lead
+        color:rgba(255, 255, 255, 0.19)
+        padding:10px 70px
+        border:1px solid white
+        font-size: 45px
+        +transition(all 600ms ease-in-out)
+        text-align: center
+        
+        &:hover
+            background-color:white
+            color:rgba(0, 0, 0, 0.41)
+  
+        
+        
+      
+        
+        
+        
+    @media(max-width:640px)
+        .logo
+            +size(200px)
+        .lead
+            font-size:20px
+   
+    
+        
+            
+	   
+        
+            
+        
+       
+
+        
+        

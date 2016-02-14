@@ -1,0 +1,1611 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url(http://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* line 3, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 9, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 25, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 32, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 37, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 43, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* line 47, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/* line 52, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 56, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 61, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 65, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 69, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 74, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 79, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 84, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 91, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 95, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 99, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 103, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 107, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 111, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 117, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 124, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 133, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 139, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 144, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 151, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 157, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 162, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 167, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 172, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 178, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 182, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 190, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 194, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 200, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 205, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 209, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 213, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 219, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 30, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+/* line 39, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.column, .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  /* line 47, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .container {
+    width: 85%;
+    padding: 0; } }
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  /* line 55, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .container {
+    width: 80%; }
+  /* line 58, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .column, .columns {
+    margin-left: 4%; }
+  /* line 61, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .column:first-child, .columns:first-child {
+    margin-left: 0; }
+  /* line 65, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .one.column, .one.columns {
+    width: 4.66666666667%; }
+  /* line 69, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .two.columns {
+    width: 13.3333333333%; }
+  /* line 72, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .three.columns {
+    width: 22%; }
+  /* line 75, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .four.columns {
+    width: 30.6666666667%; }
+  /* line 78, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .five.columns {
+    width: 39.3333333333%; }
+  /* line 81, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .six.columns {
+    width: 48%; }
+  /* line 84, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .seven.columns {
+    width: 56.6666666667%; }
+  /* line 87, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .eight.columns {
+    width: 65.3333333333%; }
+  /* line 90, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .nine.columns {
+    width: 74.0%; }
+  /* line 93, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .ten.columns {
+    width: 82.6666666667%; }
+  /* line 96, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .eleven.columns {
+    width: 91.3333333333%; }
+  /* line 99, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0; }
+  /* line 103, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .one-third.column {
+    width: 30.6666666667%; }
+  /* line 106, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .two-thirds.column {
+    width: 65.3333333333%; }
+  /* line 109, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .one-half.column {
+    width: 48%; }
+  /* Offsets */
+  /* line 114, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-one.column, .offset-by-one.columns {
+    margin-left: 8.66666666667%; }
+  /* line 119, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-two.column, .offset-by-two.columns {
+    margin-left: 17.3333333333%; }
+  /* line 124, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-three.column, .offset-by-three.columns {
+    margin-left: 26%; }
+  /* line 129, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-four.column, .offset-by-four.columns {
+    margin-left: 34.6666666667%; }
+  /* line 134, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-five.column, .offset-by-five.columns {
+    margin-left: 43.3333333333%; }
+  /* line 139, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-six.column, .offset-by-six.columns {
+    margin-left: 52%; }
+  /* line 144, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-seven.column, .offset-by-seven.columns {
+    margin-left: 60.6666666667%; }
+  /* line 149, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-eight.column, .offset-by-eight.columns {
+    margin-left: 69.3333333333%; }
+  /* line 154, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-nine.column, .offset-by-nine.columns {
+    margin-left: 78.0%; }
+  /* line 159, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-ten.column, .offset-by-ten.columns {
+    margin-left: 86.6666666667%; }
+  /* line 164, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-eleven.column, .offset-by-eleven.columns {
+    margin-left: 95.3333333333%; }
+  /* line 169, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-one-third.column, .offset-by-one-third.columns {
+    margin-left: 34.6666666667%; }
+  /* line 174, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-two-thirds.column, .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%; }
+  /* line 179, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  .offset-by-one-half.column, .offset-by-one-half.columns {
+    margin-left: 52%; } }
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+/* line 191, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 195, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 207, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+
+/* line 213, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem; }
+
+/* line 219, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem; }
+
+/* line 225, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem; }
+
+/* line 231, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem; }
+
+/* line 237, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem; }
+
+/* line 243, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  /* line 251, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  h1 {
+    font-size: 5.0rem; }
+  /* line 254, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  h2 {
+    font-size: 4.2rem; }
+  /* line 257, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  h3 {
+    font-size: 3.6rem; }
+  /* line 260, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  h4 {
+    font-size: 3.0rem; }
+  /* line 263, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  h5 {
+    font-size: 2.4rem; }
+  /* line 266, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  h6 {
+    font-size: 1.5rem; } }
+
+/* line 271, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+p {
+  margin-top: 0; }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 278, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+a {
+  color: #1EAEDB; }
+  /* line 280, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  a:hover {
+    color: #0FA0CE; }
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 288, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.button, button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+/* line 309, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="submit"], input[type="reset"], input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+/* line 330, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.button:hover, button:hover {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+/* line 337, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+/* line 344, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.button:focus, button:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+/* line 351, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+/* line 358, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.button.button-primary, button.button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+
+/* line 365, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+
+/* line 372, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.button.button-primary:hover, button.button-primary:hover {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* line 379, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* line 386, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.button.button-primary:focus, button.button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* line 393, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* line 398, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 413, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+textarea, select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+/* line 427, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 434, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+/* line 444, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+/* line 450, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+textarea:focus, select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+/* line 455, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+label, legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+
+/* line 461, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+/* line 467, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline; }
+
+/* line 472, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 481, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+ul {
+  list-style: circle inside; }
+
+/* line 485, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+ol {
+  list-style: decimal inside;
+  padding-left: 0;
+  margin-top: 0; }
+
+/* line 491, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+ul {
+  padding-left: 0;
+  margin-top: 0; }
+  /* line 494, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+  ul ul, ul ol {
+    margin: 1.5rem 0 1.5rem 3rem;
+    font-size: 90%; }
+
+/* line 501, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+ol ol, ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+/* line 507, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+li {
+  margin-bottom: 1rem; }
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 514, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+code {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+
+/* line 524, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 533, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+
+/* line 539, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+th:first-child, td:first-child {
+  padding-left: 0; }
+
+/* line 543, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+th:last-child, td:last-child {
+  padding-right: 0; }
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 550, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+button, .button {
+  margin-bottom: 1rem; }
+
+/* line 554, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+input, textarea, select, fieldset {
+  margin-bottom: 1.5rem; }
+
+/* line 558, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+pre, blockquote, dl, figure, table, p, ul, ol, form {
+  margin-bottom: 2.5rem; }
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 565, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* line 570, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* line 575, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.u-pull-right {
+  float: right; }
+
+/* line 579, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.u-pull-left {
+  float: left; }
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 586, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+/* line 598, C:/Users/tutyr/Desktop/page/assets/css/1-tools/_skeleton.scss */
+.container:after, .row:after, .u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+/* line 3, C:/Users/tutyr/Desktop/page/assets/css/1-tools/animation.scss */
+section.top .top-wraper .rand figure:hover .overlay {
+  -webkit-animation: animation 1s linear both;
+  animation: animation 1s linear both; }
+
+/* Generated with Bounce.js. Edit at http://goo.gl/MMDwjm */
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.2% {
+    -webkit-transform: matrix3d(0.345, 0.098, 0, 0, 0.065, 0.345, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.345, 0.098, 0, 0, 0.065, 0.345, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.5% {
+    -webkit-transform: matrix3d(0.485, 0.163, 0, 0, 0.107, 0.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.485, 0.163, 0, 0, 0.107, 0.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.41% {
+    -webkit-transform: matrix3d(0.673, 0.242, 0, 0, 0.158, 0.673, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.673, 0.242, 0, 0, 0.158, 0.673, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.01% {
+    -webkit-transform: matrix3d(0.88, 0.288, 0, 0, 0.188, 0.88, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.88, 0.288, 0, 0, 0.188, 0.88, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.71% {
+    -webkit-transform: matrix3d(1.064, 0.241, 0, 0, 0.159, 1.064, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.064, 0.241, 0, 0, 0.159, 1.064, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.51% {
+    -webkit-transform: matrix3d(1.087, 0.221, 0, 0, 0.146, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.087, 0.221, 0, 0, 0.146, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.92% {
+    -webkit-transform: matrix3d(1.139, 0.105, 0, 0, 0.07, 1.139, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.139, 0.105, 0, 0, 0.07, 1.139, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.92% {
+    -webkit-transform: matrix3d(1.137, 0.082, 0, 0, 0.055, 1.137, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.137, 0.082, 0, 0, 0.055, 1.137, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% {
+    -webkit-transform: matrix3d(1.075, -0.001, 0, 0, -0.001, 1.075, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.075, -0.001, 0, 0, -0.001, 1.075, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.03% {
+    -webkit-transform: matrix3d(1.032, -0.015, 0, 0, -0.01, 1.032, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.032, -0.015, 0, 0, -0.01, 1.032, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  31.43% {
+    -webkit-transform: matrix3d(1.012, -0.017, 0, 0, -0.011, 1.012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.012, -0.017, 0, 0, -0.011, 1.012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  34.63% {
+    -webkit-transform: matrix3d(0.994, -0.014, 0, 0, -0.01, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.994, -0.014, 0, 0, -0.01, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  40.14% {
+    -webkit-transform: matrix3d(0.985, -0.007, 0, 0, -0.005, 0.985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.985, -0.007, 0, 0, -0.005, 0.985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  56.46% {
+    -webkit-transform: matrix3d(1, 0.001, 0, 0, 0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0.001, 0, 0, 0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  62.36% {
+    -webkit-transform: matrix3d(1.002, 0.001, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.002, 0.001, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  81.48% {
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  84.68% {
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+
+@keyframes animation {
+  0% {
+    -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.2% {
+    -webkit-transform: matrix3d(0.345, 0.098, 0, 0, 0.065, 0.345, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.345, 0.098, 0, 0, 0.065, 0.345, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.5% {
+    -webkit-transform: matrix3d(0.485, 0.163, 0, 0, 0.107, 0.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.485, 0.163, 0, 0, 0.107, 0.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.41% {
+    -webkit-transform: matrix3d(0.673, 0.242, 0, 0, 0.158, 0.673, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.673, 0.242, 0, 0, 0.158, 0.673, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.01% {
+    -webkit-transform: matrix3d(0.88, 0.288, 0, 0, 0.188, 0.88, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.88, 0.288, 0, 0, 0.188, 0.88, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.71% {
+    -webkit-transform: matrix3d(1.064, 0.241, 0, 0, 0.159, 1.064, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.064, 0.241, 0, 0, 0.159, 1.064, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.51% {
+    -webkit-transform: matrix3d(1.087, 0.221, 0, 0, 0.146, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.087, 0.221, 0, 0, 0.146, 1.087, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.92% {
+    -webkit-transform: matrix3d(1.139, 0.105, 0, 0, 0.07, 1.139, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.139, 0.105, 0, 0, 0.07, 1.139, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.92% {
+    -webkit-transform: matrix3d(1.137, 0.082, 0, 0, 0.055, 1.137, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.137, 0.082, 0, 0, 0.055, 1.137, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% {
+    -webkit-transform: matrix3d(1.075, -0.001, 0, 0, -0.001, 1.075, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.075, -0.001, 0, 0, -0.001, 1.075, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.03% {
+    -webkit-transform: matrix3d(1.032, -0.015, 0, 0, -0.01, 1.032, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.032, -0.015, 0, 0, -0.01, 1.032, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  31.43% {
+    -webkit-transform: matrix3d(1.012, -0.017, 0, 0, -0.011, 1.012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.012, -0.017, 0, 0, -0.011, 1.012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  34.63% {
+    -webkit-transform: matrix3d(0.994, -0.014, 0, 0, -0.01, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.994, -0.014, 0, 0, -0.01, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  40.14% {
+    -webkit-transform: matrix3d(0.985, -0.007, 0, 0, -0.005, 0.985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.985, -0.007, 0, 0, -0.005, 0.985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  56.46% {
+    -webkit-transform: matrix3d(1, 0.001, 0, 0, 0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0.001, 0, 0, 0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  62.36% {
+    -webkit-transform: matrix3d(1.002, 0.001, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.002, 0.001, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  81.48% {
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  84.68% {
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_body-element.sass */
+body {
+  background-color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Fira Sans', sans-serif;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_selection-colors.sass */
+::selection {
+  background: #FFF498; }
+
+/* line 4, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_selection-colors.sass */
+::-moz-selection {
+  background: #FFF498; }
+
+/* line 7, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_selection-colors.sass */
+img::selection {
+  background: transparent; }
+
+/* line 10, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_selection-colors.sass */
+img::-moz-selection {
+  background: transparent; }
+
+/* line 13, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_selection-colors.sass */
+body {
+  -webkit-tap-highlight-color: #FFF498; }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_links.sass */
+a {
+  color: #0074D9;
+  text-decoration: none;
+  outline: 0; }
+  /* line 7, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_links.sass */
+  a:hover,
+  a:focus {
+    color: #40a6ff; }
+
+/* line 4, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  font-weight: bold; }
+
+/* line 8, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+.gigantic {
+  font-size: 110px;
+  line-height: 1.09;
+  letter-spacing: -2px; }
+
+/* line 13, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+.huge, h1 {
+  font-size: 68px;
+  line-height: 1.05;
+  letter-spacing: -1px; }
+
+/* line 18, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+.large, h2 {
+  font-size: 42px;
+  line-height: 1.14; }
+
+/* line 22, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+.bigger, h3 {
+  font-size: 26px;
+  line-height: 1.38; }
+
+/* line 26, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+.big, h4 {
+  font-size: 22px;
+  line-height: 1.38; }
+
+/* line 30, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+.small, small {
+  font-size: 10px;
+  line-height: 1.2; }
+
+/* line 37, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+p {
+  margin: 0 0 20px 0; }
+
+/* line 40, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+em {
+  font-style: italic; }
+
+/* line 43, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+strong {
+  font-weight: bold; }
+
+/* line 46, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_typography.sass */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+/* line 5, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_example-buttons.sass */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+  /* line 26, C:/Users/tutyr/Desktop/page/assets/css/2-basics/_example-buttons.sass */
+  .button:hover,
+  .button:active,
+  .button:focus,
+  button:hover,
+  button:active,
+  button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0; }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/4-pages/header.sass */
+header {
+  width: auto;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, rgba(123, 67, 151, 0.54), rgba(220, 36, 48, 0.56));
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed; }
+  /* line 18, C:/Users/tutyr/Desktop/page/assets/css/4-pages/header.sass */
+  header #myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; }
+  /* line 34, C:/Users/tutyr/Desktop/page/assets/css/4-pages/header.sass */
+  header .logo {
+    height: 280px;
+    width: 500px;
+    background-image: url("../img/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1; }
+  /* line 41, C:/Users/tutyr/Desktop/page/assets/css/4-pages/header.sass */
+  header .lead {
+    color: rgba(255, 255, 255, 0.19);
+    padding: 10px 70px;
+    border: 1px solid white;
+    font-size: 45px;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
+    text-align: center; }
+    /* line 49, C:/Users/tutyr/Desktop/page/assets/css/4-pages/header.sass */
+    header .lead:hover {
+      background-color: white;
+      color: rgba(0, 0, 0, 0.41); }
+  @media (max-width: 640px) {
+    /* line 60, C:/Users/tutyr/Desktop/page/assets/css/4-pages/header.sass */
+    header .logo {
+      height: 200px;
+      width: 200px; }
+    /* line 62, C:/Users/tutyr/Desktop/page/assets/css/4-pages/header.sass */
+    header .lead {
+      font-size: 20px; } }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+.about {
+  height: 400px;
+  background-color: #264348;
+  position: relative; }
+  /* line 6, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+  .about .about-wraper {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    /* line 13, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+    .about .about-wraper .about-text {
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.4);
+      text-indent: -50px;
+      font-family: raleway;
+      padding: 0 100px;
+      text-align: center;
+      margin-bottom: 90px; }
+    /* line 24, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+    .about .about-wraper .spotify, .about .about-wraper .youtube {
+      border: 3px solid white;
+      padding: 10px 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      border-radius: 50px;
+      -webkit-transition: 300ms all ease-in-out;
+      -moz-transition: 300ms all ease-in-out;
+      transition: 300ms all ease-in-out; }
+      /* line 33, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+      .about .about-wraper .spotify:hover, .about .about-wraper .youtube:hover {
+        background-color: white;
+        color: #264348; }
+    /* line 36, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+    .about .about-wraper .space {
+      text-indent: 100%;
+      overflow: hidden; }
+    @media (max-width: 1024px) {
+      /* line 41, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+      .about .about-wraper .about-text {
+        padding: 0;
+        font-size: 26px; } }
+    @media (max-width: 768px) {
+      /* line 46, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+      .about .about-wraper .about-text {
+        padding: 0;
+        margin-top: 30px;
+        font-size: 18px;
+        text-indent: 0;
+        margin-bottom: 10px; }
+      /* line 54, C:/Users/tutyr/Desktop/page/assets/css/4-pages/about.sass */
+      .about .about-wraper .spotify, .about .about-wraper .youtube {
+        font-size: 18px; } }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+section.top {
+  max-height: 100%;
+  background-image: url("../img/top-bg.png");
+  background-size: cover;
+  z-index: 2; }
+  /* line 8, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+  section.top .top-wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto; }
+    /* line 23, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+    section.top .top-wraper .rand {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+      max-height: 100%;
+      background-color: rgba(121, 21, 117, 0.17); }
+      /* line 36, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+      section.top .top-wraper .rand:first-child {
+        margin-top: 100px; }
+      /* line 38, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+      section.top .top-wraper .rand:last-child {
+        margin-bottom: 100px; }
+      /* line 43, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+      section.top .top-wraper .rand figure {
+        height: 300px;
+        width: 33.33%;
+        background-color: rgba(0, 0, 0, 0.59);
+        font-size: 20px;
+        position: relative;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        -webkit-transition: 500ms all ease-in-out;
+        -moz-transition: 500ms all ease-in-out;
+        transition: 500ms all ease-in-out;
+        opacity: 0; }
+        /* line 54, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand figure:hover {
+          z-index: 1; }
+          /* line 56, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure:hover .overlay {
+            opacity: 1; }
+        /* line 59, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand figure.is-showing {
+          opacity: 1;
+          -webkit-transform: translateX(20px);
+          -moz-transform: translateX(20px);
+          -ms-transform: translateX(20px);
+          -o-transform: translateX(20px);
+          transform: translateX(20px); }
+        /* line 68, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand figure img {
+          max-height: 100%;
+          max-width: 100%;
+          height: 100%;
+          width: 100%; }
+        /* line 76, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand figure .overlay {
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.71);
+          position: absolute;
+          top: 0%;
+          left: 100;
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          -webkit-transition: all 300ms ease-in-out;
+          -moz-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out; }
+          /* line 90, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .song-name {
+            color: white;
+            font-family: raleway;
+            margin-top: 30px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-align: center; }
+          /* line 99, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .play, section.top .top-wraper .rand figure .overlay .pause {
+            height: 70px;
+            width: 70px;
+            background-image: url("../img/music_play_button.svg");
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+          /* line 107, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .pause {
+            background-image: url("../img/music_pause_button.svg"); }
+          /* line 113, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .buy {
+            width: 100%;
+            height: 100px;
+            background: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around; }
+            /* line 125, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .itunes, section.top .top-wraper .rand figure .overlay .buy .google {
+              opacity: 0;
+              -webkit-transition: all 500ms ease-in-out;
+              -moz-transition: all 500ms ease-in-out;
+              transition: all 500ms ease-in-out; }
+            /* line 128, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .opacity {
+              opacity: 1 !important; }
+            /* line 132, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .buy-button {
+              background-image: url("../img/cart.svg");
+              background-size: cover;
+              height: 50px;
+              width: 50px;
+              -webkit-transition: 300ms all ease-in-out;
+              -moz-transition: 300ms all ease-in-out;
+              transition: 300ms all ease-in-out; }
+              /* line 138, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+              section.top .top-wraper .rand figure .overlay .buy .buy-button:hover {
+                cursor: pointer;
+                -webkit-animation: move 1500ms ease-in-out infinite; }
+
+@-webkit-keyframes move {
+  50% {
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); } }
+            /* line 146, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .itunes {
+              background-image: url("../img/itunes.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+              height: 100px;
+              width: 100px; }
+              /* line 153, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+              section.top .top-wraper .rand figure .overlay .buy .itunes:hover {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1); }
+            /* line 156, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .google {
+              height: 100px;
+              width: 100px;
+              background-image: url("../img/soundcloud.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center; }
+              /* line 164, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+              section.top .top-wraper .rand figure .overlay .buy .google:hover {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1); }
+        /* line 168, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand figure .active {
+          opacity: 1; }
+      @media (max-width: 1024px) {
+        /* line 178, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand figure {
+          height: 200px; }
+          /* line 181, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .song-name {
+            font-size: 18px; }
+          /* line 183, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .play, section.top .top-wraper .rand figure .overlay .pause {
+            height: 50px;
+            width: 50px; }
+          /* line 185, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .buy {
+            height: 75px; }
+            /* line 188, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .buy-button {
+              height: 40px;
+              width: 40px; }
+            /* line 190, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .itunes, section.top .top-wraper .rand figure .overlay .buy .google {
+              height: 70px;
+              width: 70px; } }
+    @media (max-width: 768px) {
+      /* line 196, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+      section.top .top-wraper .rand {
+        flex-direction: column; }
+        /* line 199, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand figure {
+          height: 200px;
+          width: 200px; }
+          /* line 202, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .song-name {
+            font-size: 16px; }
+          /* line 204, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .play {
+            height: 50px;
+            width: 50px; }
+          /* line 206, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+          section.top .top-wraper .rand figure .overlay .buy {
+            height: 50px; }
+            /* line 209, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .buy-button {
+              height: 25px;
+              width: 25px; }
+            /* line 211, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+            section.top .top-wraper .rand figure .overlay .buy .itunes, section.top .top-wraper .rand figure .overlay .buy .google {
+              height: 60px;
+              width: 60px; }
+        /* line 213, C:/Users/tutyr/Desktop/page/assets/css/4-pages/top.sass */
+        section.top .top-wraper .rand .first, section.top .top-wraper .rand .doi {
+          height: 200px; } }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+.subscribe {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/subscribe-bg.png");
+  background-size: cover;
+  margin-bottom: 135px; }
+  /* line 13, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+  .subscribe .anunt {
+    color: white;
+    font-family: raleway;
+    font-size: 28px;
+    text-align: center;
+    padding: 0 30px;
+    margin-top: 50px; }
+  /* line 21, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+  .subscribe .subscribe-form {
+    max-width: 100%;
+    margin-bottom: 50px; }
+    /* line 26, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+    .subscribe .subscribe-form .mc-field-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      /* line 32, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+      .subscribe .subscribe-form .mc-field-group #mce-EMAIL, .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe {
+        background: transparent;
+        border: 3px solid white;
+        border-radius: 0;
+        margin: 0;
+        padding: 50px 30px;
+        font-size: 28px;
+        font-family: raleway; }
+        /* line 41, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+        .subscribe .subscribe-form .mc-field-group #mce-EMAIL:focus, .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe:focus {
+          background: transparent; }
+        /* line 43, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+        .subscribe .subscribe-form .mc-field-group #mce-EMAIL:active, .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe:active {
+          background: transparent; }
+      /* line 46, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+      .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe {
+        background: white;
+        font-size: 28px;
+        font-family: raleway;
+        padding: 50px 30px;
+        line-height: 10%; }
+        /* line 54, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+        .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe:active {
+          background: white; }
+        /* line 56, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+        .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe:focus {
+          background: white; }
+  @media (max-width: 640px) {
+    /* line 60, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+    .subscribe .anunt {
+      font-size: 18px; }
+    /* line 63, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+    .subscribe .subscribe-form .mc-field-group {
+      flex-direction: column; }
+      /* line 65, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+      .subscribe .subscribe-form .mc-field-group #mce-EMAIL, .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe {
+        font-size: 16px;
+        padding: 20px 20px;
+        text-align: center; }
+      /* line 69, C:/Users/tutyr/Desktop/page/assets/css/4-pages/subscribe.sass */
+      .subscribe .subscribe-form .mc-field-group #mc-embedded-subscribe {
+        padding: 20px 58px; } }
+
+/* line 1, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+.player {
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../img/top-bg.png"); }
+  /* line 11, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+  .player .audio-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    box-shadow: 0px 6px 60px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    overflow: hidden; }
+    /* line 23, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+    .player .audio-player .audio-buttons {
+      position: relative;
+      height: 50px; }
+      /* line 27, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+      .player .audio-player .audio-buttons .audio-info {
+        position: absolute;
+        top: 50%;
+        left: 72%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: auto;
+        color: rgba(255, 255, 255, 0.65);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center; }
+      /* line 41, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+      .player .audio-player .audio-buttons .play-button, .player .audio-player .audio-buttons .pause-button, .player .audio-player .audio-buttons .volume-button {
+        height: 40px;
+        width: 40px;
+        border: none;
+        background-image: url("../img/music_play_button.svg");
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0; }
+      /* line 53, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+      .player .audio-player .audio-buttons .pause-button {
+        background-image: url("../img/music_pause_button.svg"); }
+      /* line 57, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+      .player .audio-player .audio-buttons .volume-button {
+        background-image: url("../img/music_volume_up.svg");
+        left: 15%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin: 0; }
+      /* line 65, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+      .player .audio-player .audio-buttons .volume {
+        max-width: 25%;
+        -webkit-appearance: none !important;
+        background: #b7b5b5;
+        height: 3px;
+        -webkit-transition: 500ms all ease-in-out;
+        -moz-transition: 500ms all ease-in-out;
+        transition: 500ms all ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin-left: 2%; }
+        /* line 77, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+        .player .audio-player .audio-buttons .volume::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          height: 10px;
+          width: 10px;
+          background: #1D6265;
+          border-radius: 50%;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000; }
+    /* line 85, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+    .player .audio-player .audio-timer {
+      max-width: 100%;
+      height: 5px;
+      margin-bottom: 10px;
+      background-color: white;
+      border-radius: 2px; }
+      /* line 95, C:/Users/tutyr/Desktop/page/assets/css/4-pages/player.sass */
+      .player .audio-player .audio-timer .progress-bar {
+        height: 6px;
+        width: 0%;
+        background-color: #194b4d;
+        -webkit-transition: all 5s ease-in-out;
+        -moz-transition: all 5s ease-in-out;
+        transition: all 5s ease-in-out; }
+
+/*# sourceMappingURL=main.css.map */

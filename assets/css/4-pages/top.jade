@@ -1,0 +1,53 @@
+mixin song-overlay (name,song,ilink,glink,number)
+    .overlay
+        h3(nume="#{name}",sursa="#{song}", nr="#{number}").song-name #{name}
+        .play
+        .pause
+        .buy
+            a(href="#{ilink}",target="_blank").itunes
+            .buy-button
+            a(href="#{glink}",target="_blank").google
+            
+
+section.top 
+    .top-wraper
+        .rand
+            figure
+                img(src="assets/img/top-images/first.jpg")
+                +song-overlay("Major Lazer & DJ Snake feat. MO - Lean On","1.mp3","https://itunes.apple.com/nz/album/lean-on-feat.-m-dj-snake-single/id971548403","https://www.amazon.com/gp/product/B00YIAXFG4?ie=UTF8&keywords=lean%20on%20major%20lazer&qid=1455453385&ref_=sr_1_1&s=dmusic&sr=1-1","1")
+            figure 
+                img(src="assets/img/top-images/second.png")
+                +song-overlay("Hozier - Take Me To Church","2.mp3","https://itunes.apple.com/gb/album/take-me-to-church-single/id843554500#","https://www.amazon.com/Take-Me-to-Church/dp/B00M01JCAQ/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455453669&sr=1-1&keywords=take+me+to+church","2")
+            figure 
+                img(src="assets/img/top-images/third.jpg")
+                +song-overlay("Kadebostany - Castle In the Snow","3.mp3","https://itunes.apple.com/us/album/castle-in-the-snow-single/id920191876","https://www.amazon.com/Castle-Snow-Feder-Remix/dp/B0177BU0N6/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455453725&sr=1-1&keywords=castle+in+the+snow","3")
+            figure
+                img(src="assets/img/top-images/fourth.jpg")
+                +song-overlay("Imany - The Good, The Bad & The Crazy","4.mp3","https://itunes.apple.com/ua/album/good-bad-crazy-remixes-ep/id959506938","https://www.amazon.com/Good-Bad-Crazy/dp/B00KLPI02E/ref=sr_1_6?s=dmusic&ie=UTF8&qid=1455453773&sr=1-6&keywords=the+good+the+bad+the+crazy","4")
+            figure
+                img(src="assets/img/top-images/fifth.jpg")
+                +song-overlay("Lorde feat. Disclosure-Magnets","5.mp3","https://itunes.apple.com/nz/music-video/magnets-feat.-lorde/id1044292987","https://www.amazon.com/Magnets-feat-Lorde/dp/B013YXZNWY/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455453856&sr=1-1&keywords=lorde+magnets","5")
+            figure
+                img(src="assets/img/top-images/sixth.jpg")
+                +song-overlay("Taylor Swift-Style ","6.mp3","https://itunes.apple.com/us/album/1989/id907242701","https://www.amazon.com/Style/dp/B00OXE3A6K/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455453932&sr=1-1&keywords=taylor+swift+style","6")
+            
+            figure
+                img(src="assets/img/top-images/eight.jpg")
+                +song-overlay("Daft Punk-Get Lucky","7.mp3","https://itunes.apple.com/us/album/get-lucky-feat.-pharrell-williams/id664332737","https://www.amazon.com/Get-Lucky/dp/B00CRMX53S/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1455454014&sr=1-2&keywords=get+lucky+daft+punk","7")
+            figure
+                img(src="assets/img/top-images/ninth.jpg")
+                +song-overlay("Coldplay-Adventure Of A Lifetime","8.mp3","https://itunes.apple.com/gb/album/a-head-full-of-dreams/id1053933969","https://www.amazon.com/Adventure-Of-A-Lifetime/dp/B017JGRPEG/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455454057&sr=1-1&keywords=coldplay+adventure+of+a+lifetime","8")
+            figure
+                img(src="assets/img/top-images/ten.jpg")
+                +song-overlay("Kygo-Stole the show","9.mp3","https://itunes.apple.com/us/album/stole-show-feat.-parson-james/id977394712","https://www.amazon.com/Stole-the-Show/dp/B00V0H71WW/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455454106&sr=1-1&keywords=stole+the+show+kygo","9")
+            
+            figure
+                img(src="assets/img/top-images/twelve.jpg")
+                +song-overlay("Pink Floyd-Confortably Numb","10.mp3","https://itunes.apple.com/us/album/comfortably-numb-pts.-1-2/id14071656","https://www.amazon.com/Comfortably-Numb/dp/B019HKKQXE/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455454139&sr=1-1&keywords=comfortably+numb","10")
+            
+        
+       
+            
+            
+        
+        

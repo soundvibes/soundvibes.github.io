@@ -1,0 +1,76 @@
+.subscribe
+    max-height:100%
+    max-width: 100%
+    width: auto
+    height:auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items:center
+    background-image:url("../img/subscribe-bg.png")
+    background-size: cover
+    margin-bottom:135px
+    .anunt
+        color:white
+        font-family: raleway
+        font-size: 28px
+        text-align: center
+        padding:0 30px
+        margin-top:50px
+        
+    .subscribe-form
+        
+        max-width:100%
+        margin-bottom:50px
+        
+        .mc-field-group
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+ 
+            #mce-EMAIL,#mc-embedded-subscribe
+                
+                background:transparent
+                border:3px solid white
+                border-radius: 0
+                margin:0
+                padding:50px 30px
+                font-size:28px
+                font-family: raleway
+                &:focus
+                    background:transparent
+                &:active
+                    background:transparent
+            
+            #mc-embedded-subscribe
+                background:white
+                font-size:28px
+                font-family: raleway
+                padding:50px 30px
+                line-height:10%
+                
+                
+                &:active
+                    background: white
+                &:focus
+                    background: white
+                
+    @media(max-width:640px)
+        .anunt
+            font-size:18px
+        .subscribe-form
+            .mc-field-group
+                flex-direction: column
+                #mce-EMAIL,#mc-embedded-subscribe
+                    font-size:16px
+                    padding:20px 20px
+                    text-align: center
+                #mc-embedded-subscribe
+                    padding:20px 58px
+                    
+            
+                
+            
+                           
+                

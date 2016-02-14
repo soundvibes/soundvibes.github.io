@@ -1,0 +1,56 @@
+.about
+    height:400px
+    background-color:#264348
+    position: relative
+    
+    .about-wraper
+        max-width:100%
+        position: absolute
+        top:50%
+        left:50%
+        +transform(translate(-50%,-50%))
+        
+        .about-text
+            font-size: 30px
+            color:rgba(255, 255, 255, 0.4)
+            text-indent: -50px
+            font-family: raleway
+            padding:0 100px
+            text-align: center
+            margin-bottom:90px
+            
+        
+        
+        .spotify,.youtube
+            border:3px solid white
+            padding:10px 20px
+            text-align: center
+            color:white
+            font-size: 28px
+            border-radius: 50px
+            +transition(300ms all ease-in-out)
+            
+            &:hover
+                background-color:rgb(255, 255, 255)
+                color:#264348
+        .space
+            text-indent: 100%;
+            overflow: hidden
+            
+        @media (max-width:1024px)
+            .about-text
+                padding:0
+                font-size:26px
+                
+        @media (max-width:768px)
+            .about-text
+                padding:0
+                margin-top:30px
+                font-size:18px
+                text-indent: 0
+                margin-bottom:10px
+                
+
+            .spotify,.youtube
+                font-size:18px
+            
