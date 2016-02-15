@@ -8,6 +8,12 @@ $(document).ready(function(){
     $(".pause-button").hide();
     $(".pause").hide();
     
+    $(".auto-replay").on("click",function(){
+       
+        $(this).toggleClass("active");
+        
+    });
+    
 });
 
 var i=0;
@@ -75,6 +81,7 @@ function initAudio(element){
         $(audio).bind("timeupdate",function(){
            
             var value=0;
+            var k=0;
             if(audio.currentTime > 0){
                 
                 value = Math.floor((100/audio.duration)*audio.currentTime);
@@ -83,16 +90,28 @@ function initAudio(element){
             
             $(".progress-bar").width(value + "%");
             
-            if(audio.currentTime==audio.duration)
+            for(k=0;k< value;k++)
                 {
-                    $(".progress-bar").width("0");
-                    $(".pause-button").hide();
-                    $(".play-button").show();
+                     if($(".auto-replay").is(".active") && audio.currentTime==audio.duration)
+                        {
+                            $(".progress-bar").width("0");
+                            audio.play();
+                        }
+                    else if(audio.currentTime==audio.duration){
+                        $(".progress-bar").width("0");
+                        $(".pause-button").hide();
+                        $(".play-button").show();
+                    }
                 }
-         
+
         });
         
     }
+    
+
+    
+ 
+   
 
 }
 
